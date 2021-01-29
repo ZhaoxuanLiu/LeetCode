@@ -53,6 +53,20 @@ class UF {
         }
         return x;
     }
+
+    ///////////////////////////////////////////
+    // Get max size
+    public int getMaxSize() {
+        int maxSize = 0;
+        for (int i = 0; i < parent.length; i++) {
+            if (parent[i] == i && size[i] > maxSize) {
+                maxSize = size[i];
+            }
+        }
+        
+        return maxSize;
+    }
+    
 }
 ```
 
